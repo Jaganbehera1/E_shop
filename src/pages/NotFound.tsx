@@ -1,0 +1,2 @@
+import{Link}from'react-router-dom';import{Home}from'lucide-react';import{Seo}from'../lib/seo';
+export function NotFound(){return<div className="cx py-24 text-center"><Seo title="Not found"/><p className="font-display text-7xl font-extrabold text-brand-600">404</p><h1 className="mt-4 font-display text-2xl font-bold">Page not found</h1><p className="mt-2 text-[var(--soft)]">The page you're looking for doesn't exist.</p><Link to="/" className="btn-primary mt-6"><Home className="h-4 w-4"/> Back home</Link></div>;}
