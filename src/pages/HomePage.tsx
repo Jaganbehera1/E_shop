@@ -57,7 +57,7 @@ export function HomePage(){
           </div>
         </motion.div>
         <motion.div initial={{opacity:0,scale:.9}} animate={{opacity:1,scale:1}} transition={{duration:.7,delay:.15}} className="grid grid-cols-2 gap-4">
-          {['https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&w=600','https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&w=600','https://images.pexels.com/photos/2009295/pexels-photo-2009295.jpeg?auto=compress&w=600','https://images.pexels.com/photos/2207357/pexels-photo-2207357.jpeg?auto=compress&w=600'].map((src,i)=>(
+          {['https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&w=600','https://thumbs.dreamstime.com/z/durban-south-africa-march-arduino-uno-open-source-microcontroller-development-board-isolated-white-background-185170139.jpg','https://dl.espressif.com/dl/schematics/pictures/esp32-devkitc-v4-front.jpg','https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffeeds.newsusa.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Ffull_size_rss_feed%2Fpublic%2F2024-10%2Fshutterstock_2513401165.jpg%3Fitok%3DFBDul56H&f=1&nofb=1&ipt=4dd61b13f934a7bc7f58e60e8fc74f6469c6eaa163b3f72eac70910401e6c716&ipo=images'].map((src,i)=>(
             <motion.div key={i} animate={{y:[0,-8,0]}} transition={{duration:4+i,repeat:Infinity,ease:'easeInOut'}} className="overflow-hidden rounded-2xl border border-white/20 shadow-2xl">
               <img src={src} alt="" loading="lazy" className="h-40 w-full object-cover sm:h-48"/>
             </motion.div>
@@ -101,7 +101,7 @@ export function HomePage(){
     <section className="cx py-12">
       <SH title="Project solutions" sub="School to industry — we build it"/>
       <div className="grid gap-4 md:grid-cols-3">
-        {[{tag:'School',title:'Science fair winners',img:'https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&w=800',to:'/project-solutions?type=school'},{tag:'College',title:'Final-year projects',img:'https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&w=800',to:'/project-solutions?type=final_year'},{tag:'Industry',title:'Custom IoT & embedded',img:'https://images.pexels.com/photos/2207357/pexels-photo-2207357.jpeg?auto=compress&w=800',to:'/services'}].map(c=>(
+        {[{tag:'School',title:'Science fair winners',img:'https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&w=800',to:'/project-solutions?type=school'},{tag:'College',title:'Final-year projects',img:'https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&w=800',to:'/project-solutions?type=final_year'},{tag:'Industry',title:'Custom IoT & embedded',img:'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffeeds.newsusa.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Ffull_size_rss_feed%2Fpublic%2F2024-10%2Fshutterstock_2513401165.jpg%3Fitok%3DFBDul56H&f=1&nofb=1&ipt=4dd61b13f934a7bc7f58e60e8fc74f6469c6eaa163b3f72eac70910401e6c716&ipo=images',to:'/services'}].map(c=>(
           <Link key={c.tag} to={c.to} className="group relative overflow-hidden rounded-2xl">
             <img src={c.img} alt={c.title} className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"/>
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"/>
